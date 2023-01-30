@@ -1,0 +1,4 @@
+
+How to compile C++ files on Mac:
+g++ -o [output file name] [input file name]
+
