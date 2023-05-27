@@ -11,7 +11,7 @@ It is possible to write five as a sum in exactly six different ways:
 How many different ways can one hundred be written as a sum of at least two positive integers?
 
 '''
-
+import sys
 def partitions(n):
     parts = [1]+[0]*n
     for t in range(1, n+1):
@@ -19,4 +19,4 @@ def partitions(n):
             parts[x] += parts[i]
     return parts[n] - 1 # don't count trivial partition
 
-print(partitions(100))
+print(partitions(int(sys.argv[1])))
